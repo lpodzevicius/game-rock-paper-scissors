@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game rock paper scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/332a215f17.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg">
+    <div class="main">
+      <div class="header">
+        <h1>Akmuo popierius žirklės</h1>
+      </div>
+      <div class="player-container" id="player">
+          <h2>Rezultatas:</h2>
+        <h2>
+          Player: <span id="playerScore"></span>
+          <span class="choice" id="playerChoice"></span>
+        </h2>
+        <h2>
+            Computer: <span id="compScore"></span>
+            <span class="choice" id="compChoice"></span>
+          </h2>
+          <h4>Player pasirinkimas</h4>
+        <i
+          class="far fa-hand-rock"
+          title="Rock"
+          id="playerRock"
+          onclick="select('rock')"
+        ></i>
+        <i
+          class="far fa-hand-paper"
+          title="Paper"
+          id="playerPaper"
+          onclick="select('paper')"
+        ></i>
+        <i
+          class="far fa-hand-scissors"
+          title="Scissors"
+          id="playerScissors"
+          onclick="select('scissors')"
+        ></i>
+      </div>
+      
+      
+      <div class="player-container" id="comp">
+        <h4>Computer pasirinkimas</h4>
+        <i class="far fa-hand-rock" title="Rock" id="compRock"></i>
+        <i class="far fa-hand-paper" title="Paper" id="compPaper"></i>
+        <i class="far fa-hand-scissors" title="Scissors" id="compScissors"></i>
+      </div>
+      
+      <div class="result-container">
+        <h3 class="result-text" id="resultText"></h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
